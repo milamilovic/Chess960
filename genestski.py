@@ -13,7 +13,6 @@ def generisi_pocetne_hromozome(broj_jedinki):
     for i in range(broj_jedinki):
         jedinka = permutuj(osnovna_pozicija)
         jedinke.append(jedinka)
-        #print(jedinka)
     return jedinke
 
 def permutuj(osnovna_pozicija):
