@@ -13,7 +13,7 @@ def main():
     najbolje_vrednosti = [izracunaj_fitnes(rangirani_roditelji[i]) for i in range(9, -1, -1)]
     najbolji_rasporedi = [rangirani_roditelji[i] for i in range(9, -1, -1)]
     #petlja koja iterira max broj iteracija
-    for i in range(100):
+    for i in range(50):
         #rangiramo i napravimo parove
         rangirani_roditelji = rangiraj(populacija)
         najbolje_vrednosti.append(izracunaj_fitnes(rangirani_roditelji[0]))
@@ -28,8 +28,8 @@ def main():
         populacija = elitizam(rangirani_roditelji, rangirana_deca, 0.5)
         nacrtaj(populacija, 0)
     #iscrtamo
-    x = [i for i in range(len(najbolje_vrednosti))]
-    plt.plot(x, najbolje_vrednosti)
+    x = [i for i in range(len(najbolje_vrednosti)-10)]
+    plt.plot(x, najbolje_vrednosti[0:len(x)])
     plt.show()
 
 # 1  -  top
