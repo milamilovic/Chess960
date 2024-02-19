@@ -54,8 +54,12 @@ After crossing comes the mutation of the obtained children. Mutation allows gene
 Elitism, i.e., forming a new generation, allows new initial populations to be formed from parents and children for the next iteration. The parameter of the function that performs elitism is a coefficient representing what percentage of children and what percentage of parents make up the new generation. By testing the program, it was concluded that the coefficient 0.5 best suits the Fischer chess problem.
 
 ## Preview
-![Example of console output](C:\Users\computer\Videos\Captures\sah960.png)
-![Example of graph](C:\Users\computer\Videos\Captures\chess960graph.png)
+Example of console output:
+![sah960](https://github.com/milamilovic/Chess960/assets/104532211/3f4a5a23-7655-41bb-87ac-bd61b2b4a4ed)
+
+Example of graph:
+![chess960graph](https://github.com/milamilovic/Chess960/assets/104532211/88a93122-6634-428f-ac0b-e330627482bb)
+
 
 ## Conclusion
 The program has several parameters, the values of which were chosen through testing:
